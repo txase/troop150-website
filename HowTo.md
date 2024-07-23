@@ -34,6 +34,9 @@ If you haven't worked on the website before you first need to fork the sources t
     1. Enter "upstream" for the remote name.
 
 ### For each new change you want to make
+1. Fetch the latest changes from the main / "upstream" repository:
+    1. Click the three dots at the top of the "Source Control" pane on the left and select "Fetch".
+    1. Select "upstream".
 1. Create a new branch for your changes:
     1. Click the three dots at the top of the "Source Control" pane on the left and select "Branch" -> "Create Branch From..."
     1. Select "upstream/main"
