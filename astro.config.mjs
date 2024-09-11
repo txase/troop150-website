@@ -23,8 +23,9 @@ export default defineConfig({
     }),
     AutoImport({
       imports: [
-        "@/shortcodes/Button",
         "@/shortcodes/Accordion",
+        "@/shortcodes/Button",
+        "@/components/Calendar.astro",
         "@/shortcodes/Notice",
         "@/shortcodes/Video",
         "@/shortcodes/Youtube",
