@@ -185,3 +185,8 @@
 footer p a {
   @apply transition-all duration-200 hover:text-white;
 }
+
+.fullcalendar-view .fc-col-header,
+.fullcalendar-view .fc-scrollgrid-sync-table {
+  @apply my-0;
+}
