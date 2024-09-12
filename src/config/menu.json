@@ -1,6 +1,10 @@
 {
   "main": [
     {
+      "name": "Calendar",
+      "url": "/calendar"
+    },
+    {
       "name": "Who we are",
       "url": "/about"
     },
