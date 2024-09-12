@@ -14,13 +14,13 @@ const Calendar = ({}: {}) => {
         id: 'Troop 150',
         url: '/calendar/150',
         format: 'ics',
-        color: theme.colors.default.theme_color.primary
+        color: theme.colors.bsa.blue
       },
       {
         id: 'Troop 5150',
         url: '/calendar/5150',
         format: 'ics',
-        color: theme.colors.default.theme_color.theme_dark
+        color: theme.colors.bsa.yellow
       }
     ]}
     eventClick={info => {
