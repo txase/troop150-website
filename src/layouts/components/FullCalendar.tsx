@@ -32,7 +32,7 @@ const Calendar = ({}: {}) => {
       eventClick={info => {
         info.jsEvent.preventDefault();
 
-        alert(`${info.event.source?.id} - ${htmlDecode(info.event.title)}\n\nLocation: ${htmlDecode(info.event.extendedProps.location)}\n\n${htmlDecode(info.event.extendedProps.description)}`);
+        alert(`Calendar: ${info.event.source?.id}\n\nEvent: ${htmlDecode(info.event.title)}\n\nLocation: ${htmlDecode(info.event.extendedProps.location)}\n\n${htmlDecode(info.event.extendedProps.description)}`);
       }}
     />
   );
