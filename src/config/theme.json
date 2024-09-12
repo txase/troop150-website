@@ -13,6 +13,10 @@
         "dark": "#152035",
         "light": "#a1a5ae"
       }
+    },
+    "bsa": {
+      "blue": "#003F87",
+      "yellow": "#FFCC00"
     }
   },
   "fonts": {
