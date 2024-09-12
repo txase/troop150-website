@@ -7,6 +7,7 @@ import theme from '@/config/theme.json'
 const Calendar = ({}: {}) => {
   return (
     <FullCalendar
+    viewClassNames={"fullcalendar-view"}
     plugins={[ dayGridPlugin, iCalendarPlugin ]}
     initialView="dayGridMonth"
     eventSources={[
