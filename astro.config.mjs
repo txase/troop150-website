@@ -29,6 +29,7 @@ export default defineConfig({
         "@/shortcodes/Accordion",
         "@/shortcodes/Button",
         "@/components/Calendar.astro",
+        "@/components/LostItems.astro",
         "@/shortcodes/Notice",
         "@/shortcodes/Video",
         "@/shortcodes/Youtube",
