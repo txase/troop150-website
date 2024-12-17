@@ -6,24 +6,13 @@ interface Item {
 }
 
 const LostItems = () => {
-  /*const items = [
-    {
-      fname: 'dog',
-      description: 'a dope dog'
-    },
-    {
-      fname: 'eye ball',
-      description: 'a bloated eye ball'
-    }
-  ];*/
-
   const [items, setItems] = useState([] as Item[]);
 
   useEffect(() => {
     fetch("/lost-n-found/items")
       .then(response => {
         response.json()
-          .then(data => setItems(data.items)
+          .then(data => setItems(data)
         )
       });
   });

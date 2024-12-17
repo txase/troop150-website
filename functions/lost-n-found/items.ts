@@ -47,10 +47,18 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         
       }
       console.log(listed.objects)
+      
+     
 
-      return (listed.objects.map(item =>))
+      const items = (listed.objects.map(item => item.customMetadata ))
+      return new Response(JSON.stringify(items), {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
     } catch (err) {
-      console.error(`Error fetching items: ${err}`);
-      return new Response("Error fetching items", { status: 400 });
+      console.error(`Error fetching items: ${err}`)
+      return new Response("Error fetching items", { status: 400 })
     }
   }
