@@ -2,6 +2,6 @@ This component exists in order to render the LostItems React component on the
 client side. This is what the client:only attribute achieves, which is only
 available within .astro and .mdx files.
 ---
-import LostItems from '@/components/LostItems'
+import LostItemsComponent from '@/components/LostItems'
 ---
-<LostItems client:only="react" />
+<LostItemsComponent client:only="react" />

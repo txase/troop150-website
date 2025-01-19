@@ -11,11 +11,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       let input = await context.request.formData();
       console.log(input);
 
-      const formDataObj = {};
-      input.forEach((value, key) => (formDataObj[key] = value));
+      const formDataObj = {
+        fname: input.get('fname') as string,
+        description: input.get('description') as string,
+      };
+
+      const image = input.get('image') as File;
 
       const uuid = crypto.randomUUID()
-      await context.env.LOST_AND_FOUND_ITEMS.put(uuid, "image", {customMetadata:formDataObj})
+      await context.env.LOST_AND_FOUND_ITEMS.put(uuid, image, {customMetadata: formDataObj})
 
       console.log(uuid);
       return new Response("Thanks");
@@ -26,11 +30,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   }
   export const onRequestGet: PagesFunction<Env> = async (context) => {
     try {
-      const options = { 
+      const options: R2ListOptions = { 
         include: ["customMetadata"],
       };
       
-      const listed = await context.env.LOST_AND_FOUND_ITEMS.list(options as R2ListOptions);
+      const listed = await context.env.LOST_AND_FOUND_ITEMS.list(options);
 
       let truncated = listed.truncated;
       let cursor = listed.truncated ? listed.cursor : undefined;
@@ -47,10 +51,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         
       }
       console.log(listed.objects)
-      
-     
 
-      const items = (listed.objects.map(item => item.customMetadata ))
+      const items = listed.objects.map(item => ({
+        ...item.customMetadata,
+        id: item.key,
+      }));
       return new Response(JSON.stringify(items), {
         headers: {
           'Content-Type': 'application/json',
