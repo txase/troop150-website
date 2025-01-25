@@ -1,13 +1,12 @@
 ---
-title: "Summer camp 2024"
-meta_title: ""
-description: "meta description"
+title: "Summer Camp"
+meta_title: "Summer Camp 2024"
+description: ""
 date: 2024-08-10
 image: "/images/posts/summer_camp_2024_route_of_the_hiawatha.png"
-categories: ["Summer camp"]
+categories: ["Campouts"]
 authors: ["Iselin Eide", "Elliot Douglas"]
-tags: ["Campouts", "Summer camp"]
-draft: false
+tags: ["Summer camp"]
 ---
 
 ## Pre-camp
