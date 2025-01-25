@@ -11,30 +11,33 @@ const htmlDecode = (html: string) => new DOMParser()
 
 const Calendar = ({}: {}) => {
   return (
-    <FullCalendar
-      viewClassNames={"fullcalendar-view"}
-      plugins={[ dayGridPlugin, iCalendarPlugin ]}
-      initialView="dayGridMonth"
-      eventSources={[
-        {
-          id: 'Troop 150',
-          url: '/calendar/150',
-          format: 'ics',
-          color: theme.colors.bsa.blue
-        },
-        {
-          id: 'Troop 5150',
-          url: '/calendar/5150',
-          format: 'ics',
-          color: theme.colors.bsa.yellow
-        }
-      ]}
-      eventClick={info => {
-        info.jsEvent.preventDefault();
+    <div className='h-[705px]'>
+      <FullCalendar
+        viewClassNames={"fullcalendar-view"}
+        plugins={[ dayGridPlugin, iCalendarPlugin ]}
+        initialView="dayGridMonth"
+        eventSources={[
+          {
+            id: 'Troop 150',
+            url: '/calendar/150',
+            format: 'ics',
+            color: theme.colors.bsa.blue
+          },
+          {
+            id: 'Troop 5150',
+            url: '/calendar/5150',
+            format: 'ics',
+            color: theme.colors.bsa.yellow
+          }
+        ]}
+        eventClick={info => {
+          info.jsEvent.preventDefault();
 
-        alert(`Calendar: ${info.event.source?.id}\n\nEvent: ${htmlDecode(info.event.title)}\n\nLocation: ${htmlDecode(info.event.extendedProps.location)}\n\n${htmlDecode(info.event.extendedProps.description)}`);
-      }}
-    />
+          alert(`Calendar: ${info.event.source?.id}\n\nEvent: ${htmlDecode(info.event.title)}\n\nLocation: ${htmlDecode(info.event.extendedProps.location)}\n\n${htmlDecode(info.event.extendedProps.description)}`);
+        }}
+        height="100%"
+      />
+    </div>
   );
 };
 
