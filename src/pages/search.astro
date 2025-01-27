@@ -1,17 +1,23 @@
 ---
 import Base from "@/layouts/Base.astro";
-import SearchBar from "@/layouts/SearchBar";
+import SearchBar, { type SearchItem } from "@/layouts/SearchBar";
 import { getSinglePage } from "@/lib/contentParser.astro";
 
 // Retrieve all articles
-const posts = await getSinglePage("posts");
+const posts: SearchItem[] = (await getSinglePage("posts")).map(post => ({
+  slug: post.id,
+  data: post.data,
+  content: post.body
+}));
+
+const pages: SearchItem[] = (await getSinglePage("pages")).map(post => ({
+  slug: post.slug,
+  data: post.data,
+  content: post.body,
+}));
 
 // List of items to search in
-const searchList = posts.map((item) => ({
-  slug: item.id,
-  data: item.data,
-  content: item.body,
-}));
+const searchList = posts.concat(pages);
 ---
 
 <Base title={`Search`}>
