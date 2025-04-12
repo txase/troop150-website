@@ -5,6 +5,7 @@ import Pagination from "@/layouts/components/Pagination.astro";
 import Posts from "@/layouts/Posts.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { sortByDate } from "@/lib/utils/sortFunctions";
+import { Image } from "astro:assets";
 
 const posts = await getSinglePage("posts");
 const sortedPosts = sortByDate(posts);
@@ -13,6 +14,15 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
 
 <Base>
+  <section class="section">
+    <Image
+      width=1500
+      height=1500
+      src={config.metadata.meta_image}
+      alt={config.site.title}
+      class="w-full h-[34rem] object-cover"
+    />
+  </section>
   <section class="section">
     <div class="container">
       <Posts posts={currentPosts} className="mb-16" />
