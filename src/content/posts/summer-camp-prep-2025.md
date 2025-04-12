@@ -9,8 +9,6 @@ authors: ["Chase Douglas"]
 tags: ["Summer Camp", "Baldwin"]
 ---
 
-## Get Ready for Summer Camp
-
 Summer camp is just around the corner, and we are gearing up for an exciting adventure at Camp Baldwin! From the [Camp Baldwin](https://cpcscouting.org/project/camp-baldwin/) website: 
 
 > With epic excursions on horseback, wicked rides on rapids, fantastic rocks to climb and trails to ride, Camp Baldwin has it all.
