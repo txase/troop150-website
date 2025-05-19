@@ -6,6 +6,9 @@ draft: false
 There have been 74 eagle scouts in total since the beginning of the troop.
 |  First name  |  Last name  |  Month earned  |  Year earned  |
 | :----------: | :----------: | :-----------: | :----------: |
+|  Porter  |  Ritenour  |  January  |  2025  |
+|  Thaddeus  |  Warman  |  January  |  2025  |
+|  Evan  |  Niemeyer  |  January  |  2025  |
 |  Ravi  |  Eisner  |  July  |  2023  |
 |  Sam  |  Evans  |  October  |  2022  |
 |  Baylor  |  Howard  |  August  |  2022  |
