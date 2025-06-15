@@ -26,7 +26,7 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Environmental Science*|Emma Rawnsley|Yes
 |Sustainabillity*|Joel Ritenour, and Emma Rawnsley|Yes
 |Swimming*|No Counselor|Yes
-|Hiking*|No Counselor|Yes
+|Hiking*|Emma Rawnsley|Yes
 |Cycling*|Eric Koldinger|Yes
 |American Business|No Counselor|No
 |American Cultures|Joel Ritenour|No
