@@ -22,6 +22,10 @@
       "hasChildren": true,
       "children": [
         {
+          "name": "New Scout Information",
+          "url": "/new-scout-information"
+        },
+        {
          "name": "Merit Badge Counselors",
          "url": "/merit-badge-counselors"
         },
