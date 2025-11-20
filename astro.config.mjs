@@ -52,13 +52,6 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
   vite: {
-    resolve: {
-      alias: {
-        // Fix for react-lite-youtube-embed not exporting ES Modules correctly
-        'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css': 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css',
-        'react-lite-youtube-embed': 'react-lite-youtube-embed/dist/index.es.js',
-      },
-    },
     server: {
       proxy: {
         // Add routes here to proxy to Cloudflare Pages functions (those in the
