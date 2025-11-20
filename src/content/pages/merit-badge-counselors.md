@@ -11,23 +11,23 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 | Merit Badge | Counselors | Eagle Required |
 | ----------- | ---------- | --------------- |
 |First Aid|Steven Chen, and Emma Rawnsley| Yes
-|Citizenship in the Community|No Counselor| Yes|
-|Citizenship in the Society|Joel Ritenour|Yes|
-|Citizenship in the Nation|No Counselor| Yes|
-|Citizenship in the World|Joel Ritenour, and Emma Rawnsley|Yes
+|Citizenship in the Community|Chris Shull| Yes|
+|Citizenship in the Society|Joel Ritenour and Chris Shull|Yes|
+|Citizenship in the Nation|Chris Shull| Yes|
+|Citizenship in the World|Joel Ritenour, Emma Rawnsley, and Chris Shull|Yes
 |Communication|Emma Rawnsley|Yes
 |Cooking|Joel Ritenour, and Emma Rawnsley|Yes
-|Personal Fitness|John Kern, and Emma Rawnsley|Yes
+|Personal Fitness|John Kern, Emma Rawnsley, and Chris Shull|Yes
 |Personal Management|Eric Koldinger, James Young, and Emma Rawnsley| Yes
-|Camping|No Counselor|Yes
+|Camping|Chris Shull|Yes
 |Family Life|Joel Ritenour, and Emma Rawnsley|Yes
-|Emergency Prepareness*|Emma Rawnsley|Yes
+|Emergency Prepareness*|Emma Rawnsley and Chris Shull|Yes
 |Lifesaving*|No Counselor|Yes
-|Environmental Science*|Emma Rawnsley|Yes
+|Environmental Science*|Emma Rawnsley and Chris Shull|Yes
 |Sustainabillity*|Joel Ritenour, and Emma Rawnsley|Yes
-|Swimming*|No Counselor|Yes
-|Hiking*|Emma Rawnsley|Yes
-|Cycling*|Eric Koldinger|Yes
+|Swimming*|Chris Shull|Yes
+|Hiking*|Emma Rawnsley and Chris Shull|Yes
+|Cycling*|Eric Koldinger and Chris Shull|Yes
 |American Business|No Counselor|No
 |American Cultures|Joel Ritenour|No
 |American Heritage|No Counselor|No
@@ -39,21 +39,21 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Architecture|Nate Horrman|No
 |Art|Joel Ritenour|No
 |Astronomy|Eric Koldinger|No
-|Athletics|No Counselor|No
+|Athletics|Chris Shull|No
 |Automotive Maintenance|Joel Ritenour|No
 |Aviation|No Counselor|No
-|Backpacking|No Counselor|No
+|Backpacking|Chris Shull|No
 |Basketry|No Counselor|No
 |Bird Study|Joel Ritenour|No
 |Bugling|No Counselor|No
 |Canoeing|No Counselor|No
 |Chemistry|Chase Douglas|No
 |Chess|Joel Ritenour|No
-|Climbing|No Counselors|No
+|Climbing|Chris Shull|No
 |Coin Collecting|Joel Ritenour|No
 |Collections|Joel Ritenour|No
 |Composite Materials|No Counselor|No
-|Crime Prevention|No Counselor|No
+|Crime Prevention|Chris Shull|No
 |Dentistry|No Cousnelor|No
 |Digital Technology|Eric Koldinger, and Chase Douglas|No
 |Disabilities Awareness|No Counselor|No
@@ -70,7 +70,7 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Fire Safety|No Counselor|No
 |Fish & Wildlife Management|No Counselor|No
 |Fishing|No Counselor|No
-|Fly Fishing|No Counselor|No
+|Fly Fishing|Chris Shull|No
 |Forestry|No Couselor|No
 |Game Design|John Kern|No
 |Gardening|Joel Ritenour|No
@@ -88,7 +88,7 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Journalism|No Counselor|No
 |Kayaking|No Counselor|No
 |Landscape Architecture|No Counselor|No
-|Law|No Counselor|No
+|Law|Chris Shull|No
 |Leatherwork|No Couselor|No
 |Mammal Study|Joel Ritenour|No
 |Metalwork|No Couselor|No
@@ -110,7 +110,7 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Pottery|No Counselor|No
 |Programming|Eric Koldinger and Chase Douglas|No
 |Public Health|No Counselor|No
-|Public Speaking|Emma Rawnsley|No
+|Public Speaking|Emma Rawnsley and Chris Shull|No
 |Pulp and Paper|No Counselor|No
 |Radio|No Counselor|No
 |Railroading|No Counselor|No
@@ -130,7 +130,7 @@ Are you wanting to complete a specific merit badge, but don't know who to ask? W
 |Signs, Signals, and Codes|Emma Rawnsley|No
 |Skating|No Counselor|No
 |Small Boat Sailing|Eric Koldinger|No
-|Snow Sports|Joel Ritenour|No
+|Snow Sports|Joel Ritenour and Chris Shull|No
 |Soil and Water Conservation|Emma Rawnsley|No
 |Space Exploration|Eric Koldinger|No
 |Sports|No Counselor|No
