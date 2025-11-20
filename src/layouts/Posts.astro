@@ -94,20 +94,12 @@ const { className, posts, fluid } = Astro.props;
             {post.data.title}
           </a>
         </h3>
-        <p class="text-text">
-          {
-            plainify(
-              post.body ?? ""
-            )
-              .slice(
-                0,
-                Number(
-                  i === 0 && fluid != false ? summary_length * 2 : summary_length
-                )
-              )
-          }
-          ...
-        </p>
+        <div class="content h-[210px] overflow-hidden mb-6">
+          <Fragment set:html={post.rendered?.html} />
+        </div>
+        <a href={`/${post.id}`} class="block hover:text-primary transition duration-300">
+          Read More →
+        </a>
       </div>
     ))
   }
