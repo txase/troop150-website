@@ -1,0 +1,39 @@
+---
+
+interface Props {
+  height: number;
+}
+
+const { height } = Astro.props;
+
+---
+
+<script is:inline define:vars={{ height }}>
+  let pageReloadNeeded = false;
+  const pathname = window.location.pathname;
+
+  // The JotForm form embed only works the first time a page is loaded. Our
+  // site uses view transitions, which means if you navigate to a JotForm
+  // page, then to another page, and then back, the JotForm does not reload.
+  // This code watches for the page being loaded twice and forces a full
+  // reload as needed.
+  document.addEventListener("astro:page-load", () => {
+    if (window.location.pathname !== pathname) {
+      return;
+    }
+
+    if (pageReloadNeeded) {
+      window.location.reload();
+      return;
+    } else {
+      pageReloadNeeded = true;
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    var jotformFrame = document.querySelector("iframe");
+    if (jotformFrame) {
+      jotformFrame.style.minHeight = `${height}px`;
+    }
+  });
+</script>

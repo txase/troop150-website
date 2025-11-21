@@ -2,16 +2,10 @@
 title: Tree Recycling
 ---
 
-import IframeSizer from '@/lib/iframeSizer.astro';
+import JotFormReloaderAndSizer from '@/lib/jotFormReloaderAndSizer.astro';
 
 ---
 
 <script type="text/javascript" src="https://form.jotform.com/jsform/203098337905157"></script>
 
-<!--
-The jotform script doesn't set the correct height. We use a small script to
-override the height with a known safe value. The worst case height can be found
-when opening the website in Chrome dev tools in a tiny mobile screen size.
--->
-
-<IframeSizer height={3500} />
+<JotFormReloaderAndSizer height={3500} />
